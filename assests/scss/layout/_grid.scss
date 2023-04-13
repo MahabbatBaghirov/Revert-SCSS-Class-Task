@@ -1,0 +1,64 @@
+@import "../abstract/mixin";
+
+body{  
+        @include for-phone{
+            header {
+                nav {
+                    .hamburger-bar {
+                        display: block;
+                    }
+                    .btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include for-tablet{
+            header {
+                nav {
+                    .hamburger-bar {
+                        display: block;
+                    }
+                    .btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include for-laptop{
+            header {
+                nav {
+                    .hamburger-bar {
+                        display: block;
+                    }
+                    .btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include for-large-desktop{
+            header {
+                nav {
+                    .hamburger-bar {
+                        display: none;
+                    }
+                    .btn {
+                        display: block;
+                    }
+                }
+            }
+        }
+        @include for-xxl-large-desktop{
+            header {
+                nav {
+                    .hamburger-bar {
+                        display: none;
+                    }
+                    .btn {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }

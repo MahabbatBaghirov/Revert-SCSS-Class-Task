@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: fixed;
+    margin-top: 0;
+    z-index: 1;
+    background-color: white;
+    nav {
+        width: 75%;
+        margin: 0 auto;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+            font-size: 30px;
+            font-family: $main-font;
+            font-weight: 400;
+            color: $main-color;
+        }
+        h2 {
+            font-size: 20px;
+            font-family: $main-font;
+            font-weight: 400;
+            color: $main-color;
+        }
+        .btn {
+            display: flex;
+            &-item-1 {
+                margin-right: 20px;
+                @extend %btn-value
+            }
+            &-item-2 {
+                @extend %btn-value
+            }
+        }
+        .hamburger-bar {
+            display: none;
+            i {
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+}
